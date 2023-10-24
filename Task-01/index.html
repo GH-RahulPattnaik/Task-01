@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lacoste Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<style>
+    #header {
+        color: white;
+    }
+
+    #search-bar {
+        border: 1px solid rgb(196, 196, 196);
+    }
+
+    #cancel-button {
+        width: 50px;
+        border-radius: 100%;
+        border: 1px solid rgb(196, 196, 196);
+    }
+
+    #navbar-2 {
+        top: 94px;
+        height: 60px;
+    }
+
+    #video-container {
+        margin-top: 150px;
+    }
+
+    #video-notes {
+        color: white;
+        position: relative;
+
+    }
+
+    .darked-topics {
+        font-weight: 600;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background: #ffffff;
+        top: 100%;
+        left: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        left: -230px;
+        
+    }
+</style>
+
+<body class="p-0 m-0">
+    <!-- NAVBAR -->
+
+    <header id="header" class="fixed top-0 h-10 w-screen bg-zinc-800 text-center ">Free Delivery, Free Returns on all
+        orders</header>
+
+    <!-- NAV - 1 -->
+    <div id="navbar-1" class="flex fixed top-6 bg-white w-screen p-4 pb-0">
+
+        <!-- LOGO -->
+        <div id="logo" class="w-3/12">
+            <a href="./index.html"><img src="lacoste-logo.png" alt="#" class="h-12"></a>
+        </div>
+
+        <!-- SEARCH-BAR -->
+        <div id="search-bar" class=" flex w-5/12 px-8 rounded-full justify-items-start">
+            <span class="material-symbols-outlined pt-3">search</span>
+            <input type="text" placeholder="Find a product" class="ml-12">
+        </div>
+        <button id="cancel-button" class="ml-3  hover:bg-sky-600">X</button>
+
+
+        <!-- ICONS -->
+        <div id="icons" class="flex justify-center w-3/12 p-3 gap-3">
+            <img src="new-user-icon.png" alt="#">
+            <img src="new-location-icon.png" alt="#">&VerticalLine;
+            <img src="cart_icon.jpg" alt="#">
+        </div>
+    </div>
+
+    <!-- NAV - 2 -->
+    <div id="navbar-2" class="block fixed font-thin w-screen  h-10">
+
+        <!-- New In DROP-DOWN-MENU  -->
+        <ul class="flex bg-white py-5 justify-center gap-10 ">
+
+            <li class="dropdown"><a href="#" class="hover:font-semibold">New in <span>&dArr;</span></a>
+                <ul class="dropdown-content flex">
+                    <a href="#">
+                        <li>
+                            <a href="#"></a>
+                            <ul>
+                                <li><a href="#" class="darked-topics">See All the New In</a></li>
+                                <li><a href="#" class="darked-topics">Lacoste X Netflix</a></li>
+                                <li><a href="#" class="darked-topics">Polo Series</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Men</a>
+                                    <li><a href="#">Clothing</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Bags & Small leather goods</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Women</a>
+                                    <li><a href="#">Clothing</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Bags & Small leather goods</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Kids</a>
+                                    <li><a href="#">Kids -2-8 years</a></li>
+                                    <li><a href="#">Teen 10-16 years</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                    </a>
+                    <button class="relative hover:border hover:text-black top-9  h-12 w-12 "> <img src="close.svg"
+                            alt="CB"> </button>
+                </ul>
+            </li>
+
+            <li class="dropdown"><a href="#" class="hover:font-semibold">Men <span>&dArr;</span> </a>
+                <ul class="dropdown-content flex">
+                    <a href="#" class="">
+                        <li>
+                            <a href="#"></a>
+                            <ul>
+                                <li><a href="#" class="darked-topics">See the Men's Collection</a></li>
+                                <li><a href="#" class="darked-topics">New In</a></li>
+                                <li><a href="#" class="darked-topics">Bestsellers</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Clothing</a>
+                                    <li><a href="#">Polo Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Sweatshirts</a></li>
+                                    <li><a href="#">Tracksuits</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                    <li><a href="#">Sweater</a></li>
+                                    <li><a href="#">Trouser & Shorts</a></li>
+                                    <li><a href="#">Swimwear</a></li>
+                                    <li><a href="#">Sport Clothing</a></li>
+                                    <li><a href="#">Unerwear & Lounge wear</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Shoes</a>
+                                    <li><a href="#">Sneakers</a></li>
+                                    <li><a href="#">Outdoor</a></li>
+                                    <li><a href="#">Performance</a></li>
+                                    <li><a href="#">Sliders & Sandals</a></li>
+                                    <li><a href="#">Socks</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Accessories</a>
+                                    <li><a href="#">Belts</a></li>
+                                    <li><a href="#">Caps & Hats</a></li>
+                                    <li><a href="#">Beanies</a></li>
+                                    <li><a href="#">Scarves</a></li>
+                                    <li><a href="#">Watches</a></li>
+                                    <li><a href="#">Perfumes</a></li>
+                                    <li><a href="#">Wristband</a></li>
+                                    <li><a href="#">Sunglasses</a></li>
+                                    <li><a href="#">Iphone Cases</a></li>
+                                    <li><a href="#">Socks</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Bags & Small Leather Goods</a>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Backpack</a></li>
+                                    <li><a href="#">Bum Bags</a></li>
+                                    <li><a href="#">Vertical Bags</a></li>
+                                    <li><a href="#">Business & Laptop Bags</a></li>
+                                    <li><a href="#">Wallets & Small Leather Goods</a></li>
+                                    <li><a href="#" class="darked-topics">Sports</a></li>
+                                    <li><a href="#">Tennis</a></li>
+                                    <li><a href="#">Golf</a></li>
+                                    <li><a href="#">Fitness & Training</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                    </a>
+                    <button class="relative hover:border hover:text-black top-9  h-12 w-12 "> <img src="close.svg"
+                            alt="CB"> </button>
+                </ul>
+            </li>
+
+            <li class="dropdown"><a href="#" class="hover:font-semibold">Women <span>&dArr;</span></a>
+                <ul class="dropdown-content flex">
+                    <a href="#">
+                        <li>
+                            <a href="#"></a>
+                            <ul>
+                                <li><a href="#" class="darked-topics">See the Women's Collection</a></li>
+                                <li><a href="#" class="darked-topics">New In</a></li>
+                                <li><a href="#" class="darked-topics">Bestsellers</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Clothing</a>
+                                    <li><a href="#">Polo Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Sweater & Sweatshirts</a></li>
+                                    <li><a href="#">Shirts & Tops</a></li>
+                                    <li><a href="#">T-Shrirts</a></li>
+                                    <li><a href="#">Trouser</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                    <li><a href="#">Skirts</a></li>
+                                    <li><a href="#">Sportswear</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Shoes</a>
+                                    <li><a href="#">Shoes & Sandals</a></li>
+                                    <li><a href="#">Sneakers</a></li>
+
+                                    <a href="#" class="darked-topics">Sports</a>
+                                    <li><a href="#">Tennis</a></li>
+                                    <li><a href="#">Golf</a></li>
+                                    <li><a href="#">Fitness & Training</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Accessories</a>
+                                    <li><a href="#">Sunglasses</a></li>
+                                    <li><a href="#">Watches</a></li>
+                                    <li><a href="#">Caps</a></li>
+                                    <li><a href="#">Fregrance</a></li>
+                                    <li><a href="#">Iphone Cases</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Bags & Small Leather Goods</a>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Cross Body</a></li>
+                                    <li><a href="#">Back Pack</a></li>
+                                    <li><a href="#">Small Leather Goods</a></li>
+
+                                </ul>
+                            </a>
+                        </li>
+
+                    </a>
+                    <button class="relative hover:border hover:text-black top-9  h-12 w-12 "> <img src="close.svg"
+                            alt="CB"> </button>
+                </ul>
+            </li>
+
+            <li class="dropdown"><a href="#" class="hover:font-semibold">Kids <span>&dArr;</span></a>
+                <ul class="dropdown-content flex">
+                    <a href="#">
+                        <li>
+                            <a href="#"></a>
+                            <ul>
+                                <li><a href="#" class="darked-topics">New In</a></li>
+                                <li><a href="#" class="darked-topics">Bestsellers</a></li>
+                                <li><a href="#" class="darked-topics">See the Children's Collection</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Kids -2-8 years</a>
+                                    <li><a href="#">Boy Clothing</a></li>
+                                    <li><a href="#">Girl Clothing</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Teen -10-16 years</a>
+                                    <li><a href="#">Boy Clothing</a></li>
+                                    <li><a href="#">Girl Clothing</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Boys</a>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Girls</a>
+                                    <li><a href="#">Polo Shirts</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                    </a>
+                    <button class="relative hover:border hover:text-black top-9  h-12 w-12 "> <img src="close.svg"
+                            alt="CB"> </button>
+                </ul>
+            </li>
+
+            <li><a href="#" class="hover:font-semibold">Polo</a></li>
+
+            <li><a href="#" class="hover:font-semibold">Sneakers</a></li>
+
+            <li class="dropdown"><a href="#" class="hover:font-semibold">Collections <span>&dArr;</span></a>
+                <ul class="dropdown-content flex">
+                    <a href="#">
+                        <li>
+                            <a href="#"></a>
+                            <ul>
+                                <li><a href="#">Genderless</a></li>
+                                <li><a href="#">Lacoste Classic Selection</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Now Trending</a>
+                                    <li><a href="#">Special Edition Polo Shirts</a></li>
+                                    <li><a href="#">Back to Work</a></li>
+                                    <li><a href="#">True to yourself</a></li>
+                                    <li><a href="#">90 Anniversary</a></li>
+                                    <li><a href="#">L.12.12 Collection</a></li>
+                                    <li><a href="#">Lacoste x Netflix</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Lacoste Styles</a>
+                                    <li><a href="#">Color-Block</a></li>
+                                    <li><a href="#">Monogram</a></li>
+                                    <li><a href="#">Logos XXL</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <a href="#" class="darked-topics">Sports Collection</a>
+                                    <li><a href="#">Tennis</a></li>
+                                    <li><a href="#">Golf</a></li>
+                                    <li><a href="#">Fitness & Training</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                    </a>
+                    <button class="relative hover:border hover:text-black top-9  h-12 w-12 "> <img src="close.svg"
+                            alt="CB"> </button>
+                </ul>
+            </li>
+
+            <li><a href="#" class="hover:font-semibold">Gift Voucher</a></li>
+
+            <li class="dropdown"><a href="#" class="hover:font-semibold">We are Lacoste <span>&dArr;</span></a>
+                <ul class="dropdown-content flex">
+                    <li>
+                        <a href="#">
+                            <img src="img-01.jpg" alt="#">
+                        </a>
+                        <p class="text-xs">New Lacoste Campaign</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img-02.jpg" alt="#">
+                        </a>
+                        <p class="text-xs">Durable Elegance</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img-03.jpg" alt="#">
+                        </a>
+                        <p class="text-xs">Lacoste Story</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img-04.jpg" alt="#">
+                        </a>
+                        <p class="text-xs">The Sneaker Shop</p>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <a href="#">
+                            <img src="img-05.jpg" alt="#">
+                        </a>
+                        <p class="text-xs">Elegance in action</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img-06.jpg" alt="#">
+                        </a>
+                        <p class="text-xs">Sport</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img-07.jpg" alt="#">
+                        </a>
+                        <p class="text-xs">Poloshop</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img-08.jpg" alt="#">
+                        </a>
+                        <p class="text-xs">Crocodile lovers</p>
+                    </li>
+
+                    <button class="relative hover:border hover:text-black top-9  h-12 w-12 "> <img src="close.svg"
+                            alt="CB"> </button>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Video Content -->
+    <div id="video-container" class="block">
+        <video id="video-1" src="shoes-videos.webm" autoplay loop muted class="h-3/4 w-4/4"></video>
+        <div id="video-notes" class="-top-60 left-14 w-1/3 ">
+            <p class="font-bold text-5xl">Lacoste Sneakers</p>
+            <p class="">Sportier. And even more fasionable</p>
+        </div>
+        <div id="buttons-on-video" class="flex relative pl-14 -top-56 gap-10">
+            <button id="for-him" class="px-4 py-2 text-black bg-white hover:bg-gray-800 rounded-full"> For him </button>
+            <button id="for-her" class="px-4 py-2 text-black bg-white hover:bg-gray-800 rounded-full"> For her </button>
+        </div>
+    </div>
+    <div class="empty-space p-96 mt-96 h-4/4">.</div>
+
+    <script>
+        document.addEventListener("click", function (event) {
+            const dropdowns = document.querySelectorAll(".dropdown");
+            dropdowns.forEach(function (dropdown) {
+                if (!dropdown.contains(event.target)) {
+                    dropdown.querySelector(".dropdown-content").style.display = "none";
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
